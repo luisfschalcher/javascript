@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = prompt('Qual é seu nome?')
+        document.write(`Olá, ${nome}. <h2>Seu nome tem ${nome.length} letras</h2>`)
+        document.write(`Teste`)
+        document.writeln(`Teste`)
+        document.writeln(`Teste`)
+        document.writeln(`writeln não <br> tá quebrando linha, e sim dando espaço, então tem que usar br <br> <br>`)
+        var n = 1545.5
+        document.writeln(`${n.toFixed(2)} isso tbm foi um teste <br> <br>`)
+        document.writeln(`${n.toFixed(3).replace('.', ',')} isso também, e o próximo tembém <br> <br>`)
+        document.writeln(n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))//USD - dólar,  EUR - euro
+    </script>
+</body>
+</html>
