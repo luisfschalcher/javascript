@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(25, 55, 110);
+            color: white;
+            font: normal 18px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>Lorem, <strong>ipsum</strong> dolor sit amet consectetur adipisicing elit. Exercitationem veniam distinctio magnam nobis explicabo, cumque temporibus doloribus tenetur esse! Minima ea ipsum corporis recusandae quia expedita laborum earum obcaecati commodi!</p>
+    <div id="msg">Clique aqui</div>
+    <div name="div2">div2</div>
+    <div class="div3">div3</div>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write(p1.innerHTML)
+        corpo.style.background = 'gray'
+        p1.style.color = 'orange'
+        //alert(p1.innerHTML)
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'sperano'
+        //document.getElementById('msg').background = 'yellow'
+        var d2 = document.getElementsByName('div2')[0]
+        d2.style.background = 'yellow'
+        d2.style.color = 'black'
+        var d3 = document.getElementsByClassName('div3')[0]
+        d3.style.background = 'red'
+        var d4 = document.querySelector('#msg')//ideal
+        d4.style.color = 'blue'
+    </script>
+</body>
+</html>
