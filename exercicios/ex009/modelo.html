@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo_modelo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <div id="msg">
+            <label for="iinicio">Início</label>
+            <input type="number" name="inicio" id="iinicio" required min="0">
+            <br>
+            <label for="ifim">Fim</label>
+            <input type="number" name="fim" id="ifim" required min="0">
+            <br>
+            <label for="ipasso">Passo</label>
+            <input type="number" name="passo" id="ipasso" required min="0">
+            <br>
+            <input type="button" value="Contar" onclick="contar()">
+            <p id="res">Preparando a contagem</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Ninja Dragon</p>
+    </footer>
+
+    <script src="ScriptModelo.js"></script>
+</body>
+</html>
